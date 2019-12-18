@@ -7,11 +7,16 @@ let appData = {
   expenses: {},
   optionalExpenses: {},
   income : [],
+  timeData: time,
   saving: false
 };
 
-let question = prompt("Введите обязательную статью расходов в этом месяце", "");
-let answer = prompt("Во сколько обойдется?", "");
-appData.expenses[question] = answer;
+let a1 = prompt("Введите обязательную статью расходов в этом месяце", "");
+let a2 = prompt("Во сколько обойдется?", "");
+let a3 = prompt("Введите обязательную статью расходов в этом месяце", "");
+let a4= prompt("Во сколько обойдется?", "");
 
-alert(appData.budget);
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
+
+alert(appData.budget/30);
